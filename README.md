@@ -1,4 +1,4 @@
-<img align="right" alt="Coding" width="400" src="https://www.freepik.com/free-photo/business-people-using-internet_4246721.htm#query=web%20connection%20cloud%20technology&position=18&from_view=search&track=sph">
+<img align="right" alt="Coding" width="400" src="https://drive.google.com/file/d/1wFFjQSHafK0QVfidh9f_oAaOZiP6qTUg/view?usp=sharing">
 
 # IBM-Project-52374-1659690758
 
