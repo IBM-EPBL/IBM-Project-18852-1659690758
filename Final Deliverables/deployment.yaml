@@ -1,0 +1,76 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+  name: news-tracker-deployment
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: news-tracker
+   template:
+     metadata:
+       labels:
+         app: news-tracker
+     spec:
+       containers:
+       - name: news-tracker
+         image: icr.io/news-tracker-namespace/news-tracker
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
+         env:
+          - name: DATABASE
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: database
+                optional: false
+
+          - name: HOSTNAME
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: hostname
+                optional: false
+
+          - name: PORT
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: port
+                optional: false
+                
+          - name: UID
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: uid
+                optional: false
+
+          - name: PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: password
+                optional: false
+                
+          - name: SECRET_KEY
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: secret-key
+                optional: false
+
+          - name: API_URI
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: api-uri
+                optional: false
+                
+          - name: RAPID_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: news-tracker-secrets
+                key: rapid-api-key
+                optional: false

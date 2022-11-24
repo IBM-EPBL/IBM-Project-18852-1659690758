@@ -13,5 +13,5 @@ PORT={os.getenv("PORT")};\
 SECURITY=SSL;\
 SSLServerCertificate=DigiCertGlobalRootCA.crt;\
 UID={os.getenv("UID")};\
-PWD={os.getenv("PWD")}'
+PWD={os.getenv("PASSWORD")}'
 SECRET_KEY = os.getenv('SECRET_KEY')
