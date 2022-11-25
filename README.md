@@ -1,4 +1,3 @@
-<img align="right" alt="Coding" width="400" src="https://drive.google.com/file/d/1wFFjQSHafK0QVfidh9f_oAaOZiP6qTUg/view?usp=sharing">
 
 # IBM-Project-52374-1659690758
 
@@ -41,7 +40,7 @@ As our lives are very busy these days, we often feel we need more than 24 hrs. a
 
 ## Project Demo Video : 
 
-link
+[Demo Link](https://youtu.be/3pyEHddMQq0)
 
 ## Project Link :
 [Demo link](http://159.122.187.241:30007/)
